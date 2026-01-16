@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { 
+      width: 280px; 
+      padding: 0; 
+      margin: 0; 
+      background-color: #000000; 
+      color: #e7e9ea; 
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    .container { padding: 16px; }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    .logo { width: 20px; height: 20px; fill: #e7e9ea; }
+    h3 { margin: 0; font-size: 18px; font-weight: 700; }
+    
+    .tweet-box {
+      background: #16181c;
+      border-radius: 16px;
+      padding: 12px;
+      margin-bottom: 16px;
+      border: 1px solid #2f3336;
+    }
+    
+    button { 
+      background-color: #1d9bf0; 
+      color: white; 
+      border: none; 
+      padding: 10px 16px; 
+      border-radius: 9999px; 
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer; 
+      width: 100%;
+      transition: background 0.2s;
+    }
+    button:hover { background-color: #1a8cd8; }
+    
+    #resultado { 
+      margin-top: 15px; 
+      padding: 12px;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 14px;
+      border: 1px solid #2f3336;
+      background: #000000;
+    }
+    .footer {
+      font-size: 11px;
+      color: #71767b;
+      margin-top: 15px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <svg class="logo" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+      <h3>THE ORACLE</h3>
+    </div>
+
+    <div class="tweet-box">
+      <button id="analizar">Verificar Post</button>
+      <div id="resultado">Listo para analizar</div>
+    </div>
+
+
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
